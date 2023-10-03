@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+section{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+section .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(transparent, #fa1);
+}
+
+section .contentBox{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+height: 100%;
+}
+section .contentBox .formBox h2{
+    background-color: red;
+    width: 50%;
+    margin-bottom: 20px;
+    border-bottom: 4px solid red;
+    letter-spacing: 1px;
+}
+
+.inputBx{
+    margin-bottom: 20px;
+}
+
+.inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: red;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.inputBx span input{
+width: 100%;
+padding: 10 px 20 px;
+font-weight: 400;
+border: 1px solid; 
+letter-spacing: 1px;
+outline:none;
+background-color: transparent;
+border-radius: 10px;
+}
+
+.inputBx input[type="submit"]{
+    background-color: transparent;
+    outline:0;
+    border:0;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.inputBx input[type="submit"]:hover{
+
+}
+
+.remember{
+    margin-bottom: 10px;
+    color:black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inputBx p {
+    color: black;
+    text-align: center;
+
+}
+.inputBx p a {
+    color: red;
+
+}
+
+@media(max-width:768px){
+    section .imgBox{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height:100%;
+    }
+    section .contentBox{
+        width: 100%;
+        z-index:1;
+
+    }
+    section .contentBox .formBox{
+        width:100%;
+        background-color: black;
+        padding:40px;
+    }
+}
