@@ -1,11 +1,12 @@
-*{
-    margin: 0;
-    padding:0;
+/*Marche pas je ne sais pas pourquoi*/
+* {
+    margin: 0%;
+    padding: auto;
     box-sizing: border-box;
 }
 
 
-section{
+section {
     position: relative;
     display: flex;
     height: 100%;
@@ -16,17 +17,18 @@ section .imgBox {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent, #fa1);
+    background: linear-gradient(transparent, #fa1), url("")
 }
 
-section .contentBox{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 50%;
-height: 100%;
+section .contentBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
 }
-section .contentBox .formBox h2{
+
+section .contentBox .formBox h2 {
     background-color: red;
     width: 50%;
     margin-bottom: 20px;
@@ -34,7 +36,7 @@ section .contentBox .formBox h2{
     letter-spacing: 1px;
 }
 
-.inputBx{
+.inputBx {
     margin-bottom: 20px;
 }
 
@@ -47,32 +49,32 @@ section .contentBox .formBox h2{
     letter-spacing: 1px;
 }
 
-.inputBx span input{
-width: 100%;
-padding: 10 px 20 px;
-font-weight: 400;
-border: 1px solid; 
-letter-spacing: 1px;
-outline:none;
-background-color: transparent;
-border-radius: 10px;
-}
-
-.inputBx input[type="submit"]{
+.inputBx span input {
+    width: 100%;
+    padding: 10 px 20 px;
+    font-weight: 400;
+    border: 1px solid;
+    letter-spacing: 1px;
+    outline: none;
     background-color: transparent;
-    outline:0;
-    border:0;
+    border-radius: 10px;
+}
+
+.inputBx input[type="submit"] {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
     font-weight: 600;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.inputBx input[type="submit"]:hover{
-
+.inputBx input[type="submit"]:hover {
+    background-color: transparent;
 }
 
-.remember{
+.remember {
     margin-bottom: 10px;
-    color:black;
+    color: black;
     font-size: 14px;
     font-weight: 400;
 }
@@ -82,27 +84,32 @@ border-radius: 10px;
     text-align: center;
 
 }
+
 .inputBx p a {
     color: red;
 
 }
 
-@media(max-width:768px){
-    section .imgBox{
+
+/*Pour que ce soit responsif*/
+@media(max-width:768px) {
+    section .imgBox {
         position: absolute;
         top: 0;
-        left:0;
+        left: 0;
         width: 100%;
-        height:100%;
+        height: 100%;
     }
-    section .contentBox{
+
+    section .contentBox {
         width: 100%;
-        z-index:1;
+        z-index: 1;
 
     }
-    section .contentBox .formBox{
-        width:100%;
+
+    section .contentBox .formBox {
+        width: 100%;
         background-color: black;
-        padding:40px;
+        padding: 40px;
     }
 }
