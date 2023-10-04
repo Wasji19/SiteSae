@@ -1,15 +1,16 @@
 /*Marche pas je ne sais pas pourquoi*/
 * {
     margin: 0%;
-    padding: auto;
+    padding: 0%;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 section {
     position: relative;
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -17,7 +18,9 @@ section .imgBox {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent, #fa1), url("")
+    background: linear-gradient(transparent, #fa1), url("../assets/imgs/noir.jpg");
+    background-position : center;
+    background-size: cover;
 }
 
 section .contentBox {
@@ -26,14 +29,18 @@ section .contentBox {
     justify-content: center;
     width: 50%;
     height: 100%;
+    
 }
 
-section .contentBox .formBox h2 {
-    background-color: red;
-    width: 50%;
+section .contentBox .formBox h2 {     /* le seul truc qui marche pas */ 
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid orange;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 .inputBx {
@@ -44,32 +51,34 @@ section .contentBox .formBox h2 {
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
-    color: red;
+    color: black;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
-.inputBx span input {
+.inputBx input {
     width: 100%;
-    padding: 10 px 20 px;
+    padding: 10px 20px;
     font-weight: 400;
-    border: 1px solid;
+    border: 1px solid black;
     letter-spacing: 1px;
     outline: none;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 1px;
+    color:black;
 }
 
 .inputBx input[type="submit"] {
-    background-color: transparent;
+    background-color: orange;          /*simple couleur du bouton */
     outline: 0;
     border: 0;
-    font-weight: 600;
+    font-weight: 600;         /* mettre la même couleur mais un peu plus clair pour que quand on passe dessus ca fasse un effet */ 
     cursor: pointer;
+   
 }
 
 .inputBx input[type="submit"]:hover {
-    background-color: transparent;
+    background-color: yellow;                  /* ici c'est la couleur du bouton quand on passe dessus */
 }
 
 .remember {
@@ -86,7 +95,7 @@ section .contentBox .formBox h2 {
 }
 
 .inputBx p a {
-    color: red;
+    color: orange;
 
 }
 
