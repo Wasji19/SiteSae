@@ -122,3 +122,20 @@ section .contentBox .formBox h2 {     /* le seul truc qui marche pas */
         padding: 40px;
     }
 }
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+body{
+    background-color: white;
+
+}
+
+.navbar{
+    background-color: red;
+    color: red;
+}
