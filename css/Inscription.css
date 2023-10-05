@@ -32,7 +32,7 @@ section .contentBox {
     
 }
 
-section .contentBox .formBox h2 {     /* le seul truc qui marche pas */ 
+section h2 {     /* le seul truc qui marche pas */ 
     color: black;
     font-weight: 600;
     font-size: 1.5em;
