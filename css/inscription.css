@@ -1,3 +1,127 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+section .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(transparent, #0096ED), url("../assets/imgs/noir.jpg");
+    background-position : center;
+    background-size: cover;
+}
+
+section .contentBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    
+}
+
+section h2 {    
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #0096ED;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.inputBx {
+    margin-bottom: 20px;
+}
+
+.inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 400;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 1px;
+    color:black;
+}
+
+.inputBx input[type="submit"] {
+    background-color: #0096ED;          /*simple couleur du bouton */
+    outline: 0;
+    border: 0;
+    font-weight: 600;         /* mettre la même couleur mais un peu plus clair pour que quand on passe dessus ca fasse un effet */ 
+    cursor: pointer;
+   
+}
+
+.inputBx input[type="submit"]:hover {
+    background-color: yellow;                  /* ici c'est la couleur du bouton quand on passe dessus */
+}
+
+.remember {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inputBx p {
+    color: black;
+    text-align: center;
+
+}
+
+.inputBx p a {
+    color: #0096ED;
+
+}
+
+
+/*Pour que ce soit responsif*/
+@media(max-width:768px) {
+    section .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .contentBox {
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    section .contentBox .formBox {
+        width: 100%;
+        background-color: black;
+        padding: 40px;
+    }
+}
+
 .navbar-brand {
     position: absolute;
     left: 50%;
@@ -6,10 +130,89 @@
 }
 
 body{
-    background-color: black;
+    background-color: white;
+
 }
 
 .navbar{
     background-color: red;
     color: red;
 }
+
+
+/*
+body {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #888; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none; 
+}
+
+.signup-form {
+    background-color: #333;
+    padding: 2em;
+    border-radius: 15px;   /* arrondi les bords */
+    /*box-shadow: 0 0 20px 10px #d9534f; C'est les néons de mort 
+    width: 400px;
+}
+
+.signup-form h2 {
+    color: #d9534f;
+    font-size: 2em; /* Taille du titre "Inscrivez-vous" 
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    display: block;
+    color: white;
+    margin-bottom: .5em;
+    font-weight: 500; 
+    font-size: 1.1em; 
+    user-select: text; 
+}
+
+.input-group input {
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444; 
+    color: white;
+    font-weight: 500; 
+    user-select: text; 
+}
+
+.input-group input[type="submit"] {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #e75b52; 
+    box-shadow: 0 0 10px 5px #e75b52; 
+}
+
+.signup-form a {
+    color: white; 
+    text-decoration: none;
+    user-select: text; 
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+} */

@@ -18,7 +18,7 @@ section .imgBox {
     position: relative;
     width: 50%;
     height: 100%;
-    background: linear-gradient(transparent, #fa1), url("../assets/imgs/noir.jpg");
+    background: linear-gradient(transparent, #0096ED), url("../assets/imgs/noir.jpg");
     background-position : center;
     background-size: cover;
 }
@@ -38,7 +38,7 @@ section h2 {
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid #0096ED;
     letter-spacing: 1px;
     display: inline-block;
 }
@@ -69,7 +69,7 @@ section h2 {
 }
 
 .inputBx input[type="submit"] {
-    background-color: orange;          /*simple couleur du bouton */
+    background-color: #0096ED;          /*simple couleur du bouton */
     outline: 0;
     border: 0;
     font-weight: 600;         /* mettre la même couleur mais un peu plus clair pour que quand on passe dessus ca fasse un effet */ 
@@ -95,7 +95,7 @@ section h2 {
 }
 
 .inputBx p a {
-    color: orange;
+    color: #0096ED;
 
 }
 
