@@ -140,79 +140,22 @@ body{
 }
 
 
-/*
-body {
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: #888; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    user-select: none; 
+
+
+/*  ////////////////////////////////////////////////////////////////////////LE FOOTER ///////////////////////////////////////////////////////////////////////////*/ 
+
+
+
+.p .a {
+
+    color: #0096ED;
+    float: left;
+    width: 20px;
 }
 
-.signup-form {
-    background-color: #333;
-    padding: 2em;
-    border-radius: 15px;   /* arrondi les bords */
-    /*box-shadow: 0 0 20px 10px #d9534f; C'est les néons de mort 
-    width: 400px;
+
+.footer .h5{
+
+    color:black;
 }
 
-.signup-form h2 {
-    color: #d9534f;
-    font-size: 2em; /* Taille du titre "Inscrivez-vous" 
-    font-weight: bold;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.input-group {
-    margin-bottom: 1em;
-}
-
-.input-group label {
-    display: block;
-    color: white;
-    margin-bottom: .5em;
-    font-weight: 500; 
-    font-size: 1.1em; 
-    user-select: text; 
-}
-
-.input-group input {
-    width: 100%;
-    padding: .5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #444; 
-    color: white;
-    font-weight: 500; 
-    user-select: text; 
-}
-
-.input-group input[type="submit"] {
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s; 
-}
-
-.input-group input[type="submit"]:hover {
-    background-color: #e75b52; 
-    box-shadow: 0 0 10px 5px #e75b52; 
-}
-
-.signup-form a {
-    color: white; 
-    text-decoration: none;
-    user-select: text; 
-}
-
-.signup-form a:hover {
-    text-decoration: underline;
-} */
