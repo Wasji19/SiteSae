@@ -1,53 +1,154 @@
-/* Ajoutez cette règle pour définir une image de fond pour le body */
-body {
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Style pour la barre de navigation */
-.navbar {
-    background-color: #343a40; /* Une couleur de fond plus sombre en cas d'échec du chargement de l'image */
-    background-image: url('');
-    background-size: cover; /* Pour couvrir la navbar */
-    background-position: center; /* Pour centrer l'image */
-    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
-    padding: 20px; /* Ajout d'un espace intérieur pour agrandir la navbar */
-    color: white; /* Texte de la barre de navigation en blanc */
-}
-
-/* Autres styles pour la navbar restent les mêmes */
 .navbar-brand {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.8rem; /* Taille de police augmentée */
-    font-weight: bold; /* Texte plus gras */
+    
 }
 
-.navbar-toggler-icon {
-    border: 2px solid white; /* Icône du bouton de bascule en blanc */
+body{
+    background-color: white;
 }
 
-.nav-link {
-    color: white; /* Couleur du texte des liens */
+
+.accueil {
+    background: url(../assets/imgs/maxresdefault.jpg);
+    background-size: cover;
+    background-position: left;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 40vh; /* Ajustez la hauteur selon vos besoins */
+}
+/********************************************/
+/* Styles pour permettre le retour à la ligne du texte */
+.col-md-4 {
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
-.nav-link:hover {
-    color: #f8f9fa; /* Couleur du texte des liens au survol */
+.col-md-4 p {
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
-/* Style pour le formulaire de recherche */
-.form-inline {
-    margin-left: auto; /* Alignement du formulaire à droite */
+
+
+
+/*****************************************************************************************/
+/* Styles pour la section d'inscription/connexion */
+.connexion-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
 }
 
-.form-control {
-    margin-right: 5px;
-    border-color: white; /* Couleur de la bordure du champ de recherche */
+.connexion-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Ajoutez d'autres styles au besoin */
+.connexion-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-/* Votre CSS existant continue ici */
+.connexion-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.connexion-section .col-md-6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.connexion-section .col-md-6:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.connexion-section a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.connexion-section a.btn:hover {
+    background-color: #ffffff;
+}
+
+.connexion-section .col-md-6:first-child {
+    border-right: 2px solid #ccc; /* Bordure à droite de la première colonne */
+    padding-right: 30px; /* Ajustement de l'espacement pour séparer la bordure du contenu */
+}
+
+.connexion-section .col-md-6:last-child {
+    border-left: 2px solid #ccc; /* Bordure à gauche de la seconde colonne */
+    padding-left: 30px; /* Ajustement de l'espacement pour séparer la bordure du contenu */
+}
+
+/********************************************************************************/
+/* Styles pour le footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.footer p {
+    color: #ccc;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    text-align: center;
+    margin: 0;
+}
+/*  ////////////////////////////////////////////////////////////////////////LE FOOTER ///////////////////////////////////////////////////////////////////////////*/ 
+
+
+
+.p .a {
+
+    color: #0096ED;
+    float: left;
+    width: 20px;
+}
+
+
+.footer .h5{
+
+    color:black;
+}

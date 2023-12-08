@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// Vérifier si la variable de session pour l'identification de l'utilisateur existe
+if (!isset($_SESSION['user_id'])) {
+    // Rediriger l'utilisateur vers la page de connexion s'il n'est pas connecté
+    header("Location: ../SiteSae/pages/page_connexion.html");
+    exit; // Arrêter l'exécution du reste du code
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +107,7 @@
                         <!-- Ici sera chargé dynamiquement l'aperçu des événements les plus récents -->
                     </div>
                     <div class="text-center mt-3">
-                        <a href="../SiteSae/pages/page connexion.html" class="btn btn-primary">Voir tous les événements</a>
+                        <a href="URL_PAGE_EVENEMENTS" class="btn btn-primary">Voir tous les événements</a>
                     </div>
                 </section>
 
@@ -106,18 +117,11 @@
     <div class="container py-5 bg-light mt-4">
     <section class="connexion-section">
         <div class="container">
-            <div class="row">
-                <!-- Partie "Inscrivez-vous" -->
-                <div class="col-md-6">
-                    <h2>Inscrivez-vous</h2>
-                    <p>Rejoignez notre communauté en créant un compte sur notre site pour bénéficier de nombreux avantages."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <a href="../SiteSae/pages/Inscription.html" class="btn btn-primary">Inscription</a>
-                </div>
                 <!-- Partie "Connectez-vous" -->
                 <div class="col-md-6">
-                    <h2>Connectez-vous</h2>
-                    <p>Si vous avez déjà un compte, connectez-vous pour accéder à votre espace personnel.</p>
-                    <a href="../SiteSae/pages/page connexion.html" class="btn btn-primary">Connexion</a>
+                    <h2>Vous etes connecté</h2>
+                    <p>Profitez de vos acces et ...</p>
+                    <a href="page_connexion.html" class="btn btn-primary">Connexion</a>
                 </div>
             </div>
         </div>
