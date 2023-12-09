@@ -1,17 +1,19 @@
-html, body {
+html, body {   
 
 background-color: rgb(240,240,240);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 width:100%;
-height:100%;                                        /* c'est ces deux 100% qu'il faudra gérer pour la navbar et le footer */
+height:100%;                                       
 display:flex;
 justify-content: center;
 align-items: center;   
+padding-top: 56px; /* Hauteur de la barre de navigation */
 }
 
+
 #cld{
-width: 60%;
-height: 80%;
+width: 80%; /* Définit la largeur du calendrier à 80% */
+height: 90%;
 background-color:#E4E4E4;
 box-shadow: 0 0 10px  #0096ED;
 }
@@ -117,13 +119,18 @@ box-shadow: 0 0 10px  #0096ED;
 }
 
 
-/*  ////////////////////////////////////////////////////////////////////////LE FOOTER ///////////////////////////////////////////////////////////////////////////*/ 
+/*  ////////////////////////////////////////////////////////////////////////LE FOOTER /////////////////////////////////////////////////////////////////////////// 
 
 
-footer{
-   
-    position: relative;
+footer {
+    height: 100px; /* Définit la hauteur du footer à 100px 
+    background-color: #E4E4E4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:none;
 }
+
 .p .a {
 
     color: #0096ED;
@@ -136,3 +143,4 @@ footer{
 
     color:black;
 }
+*/ 
