@@ -47,67 +47,29 @@
             </div>
         </div>
     </nav>
-    
+       
+
     <section id="evenements" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Événements</h2>
-    
+
             <!-- Formulaire pour ajouter de nouveaux événements -->
             <form id="formEvenement">
                 <!-- ... Votre formulaire existant ... -->
             </form>
-    
+
             <!-- Bouton pour accéder à la page d'ajout d'événements -->
             <div class="text-center mt-4">
                 <a href="../pages/Ajout_événements.html" class="btn btn-primary">Ajouter un événement</a>
             </div>
-    
+
             <!-- Liste des événements existants -->
             <div class="row" id="listeEvenements">
                 <!-- Cette partie sera mise à jour dynamiquement avec JavaScript -->
             </div>
         </div>
     </section>
-    
-    <script>
-        // Liste des événements existants (à remplacer par des données provenant du serveur)
-        var evenementsExistants = [
-            { nom: 'Événement 1', description: 'Description de l\'événement 1', image: 'image1.jpg' },
-            { nom: 'Événement 2', description: 'Description de l\'événement 2', image: 'image2.jpg' },
-            // Ajoutez d'autres événements si nécessaire
-        ];
-    
-        // Fonction pour afficher uniquement les événements ajoutés
-        function afficherEvenements() {
-            // Effacer la liste actuelle des événements
-            document.getElementById('listeEvenements').innerHTML = '';
-    
-            // Boucle à travers les événements existants
-            for (var i = 0; i < evenementsExistants.length; i++) {
-                var evenement = evenementsExistants[i];
-    
-                // Créer une nouvelle carte d'événement
-                var nouvelleCarte = `
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <img src="${evenement.image}" class="card-img-top" alt="${evenement.nom}">
-                            <div class="card-body">
-                                <h5 class="card-title">${evenement.nom}</h5>
-                                <p class="card-text">${evenement.description}</p>
-                                <a href="#" class="btn btn-primary">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-    
-                // Ajouter la nouvelle carte à la liste des événements
-                document.getElementById('listeEvenements').innerHTML += nouvelleCarte;
-            }
-        }
-    
-        // Appeler la fonction pour afficher les événements au chargement de la page
-        afficherEvenements();
-    </script>
+
     
 
 

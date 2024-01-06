@@ -14,19 +14,14 @@
 }
 
 
-
-
-
-
-.row{
-    margin-top:100px;
+/* Ajoutez ces styles à votre fichier CSS (événement.css) ou dans le style en ligne */
+.ajouter-btn {
+    margin-bottom: 20px; /* Ajustez la valeur de la marge selon vos besoins */
 }
 
-
-
-
-
-
+.liste-evenements {
+    margin-top: 20px; /* Ajustez la valeur de la marge selon vos besoins */
+}
 
 
 
