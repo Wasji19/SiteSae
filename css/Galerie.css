@@ -14,10 +14,10 @@ body {
   position: relative;
   max-width: 1000px;
   width: 100%;
-  height: auto;
-  margin: 100px auto;
+  margin: 20px auto; /* Adjust margin as needed */
   padding: 20px;
 }
+
 
 .container .filter {
   display:flex;
@@ -86,12 +86,25 @@ body {
 
 
 
-.navbar-brand {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  
+/* Styles for the Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Align items to the right */
+  align-items: center;
+  background: #333;
+  padding: 10px 20px; /* Adjust padding as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
+
+/* Styles for the Navbar Brand/Logo */
+.navbar-brand {
+  color: #fff; /* Adjust text color as needed */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Optional: Adjust font weight as needed */
+  /* Add any other styles specific to your brand/logo */
+}
+
+/* You may want to add styles for other navbar elements as needed */
 
 
 
