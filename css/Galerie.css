@@ -26,7 +26,7 @@ body {
   gap: 20px;
 }
 
-.container button {
+#Boutton button {
   padding: 10px 20px;
   font-size: 18px;
   background: #fff;
@@ -36,7 +36,7 @@ body {
   cursor: pointer;
 }
 
-.container button.active {
+#Boutton button.active {
   background: rgb(130, 189, 238);
   color: #f1f1f1;
 }
@@ -84,27 +84,14 @@ body {
 
 /*     //////////////////////////////////////////////////////////////////////////// NAVBAR /////////////////////////////////////////////////////////////////////////  */
 
-
-
-/* Styles for the Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between; /* Align items to the right */
-  align-items: center;
-  background: #333;
-  padding: 10px 20px; /* Adjust padding as needed */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-}
-
-/* Styles for the Navbar Brand/Logo */
 .navbar-brand {
-  color: #fff; /* Adjust text color as needed */
-  font-size: 24px; /* Adjust font size as needed */
-  font-weight: bold; /* Optional: Adjust font weight as needed */
-  /* Add any other styles specific to your brand/logo */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
 }
 
-/* You may want to add styles for other navbar elements as needed */
+
 
 
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../SiteSae/css/style.css">
-   
-    <title>Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css/contacter.css">
+<title>Contact Us Page</title>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,82 +47,66 @@
         </div>
     </nav>
     
-
-
-<main>
-
-    <section class="accueil bg-dark d-flex w-100 h-150vh flex-column justify-content-center align-items-center">
-        <!-- Contenu de la section -->
-        <h1 class="display-1 text-white text-center"><img src="../SiteSae/assets/imgs/logoCID.png" alt="Logo" height="140"></h1>
-    </section>
-
-    <!-- Section Présentation du CID -->
-    <section class="container py-5 bg-light mt-4">
-        <h1 class="text-center">Présentation du CID</h1>
-        <div class="row">
-            <!-- Mot du Président -->
-            <div class="col-md-4">
-                <h2>Mot du Président</h2>
-                <p>Texte de remerciement du président du CID</p>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Nous contacter</h1>
+        </div>
+        <div class="contact-info">
+            <div class="info-block">
+                <h2>Numéro</h2>
+                <p class="label">Tel:</p> +33(0)225340040
+                <p class="label">Fax:</p> +33(0)225366353
             </div>
-
-            <!-- Liste des membres du bureau -->
-            <div class="col-md-4">
-                <h2>Membres du Bureau</h2>
-                <ul>
-                    <li>Président:</li>
-                    <li>Trésorier:</li>
-                    <li>Admin du site:</li>
-                </ul>
+            <div class="info-block">
+                <h2>Mail</h2>
+                <p class="label">General:</p> infoCD@gmail.com
+                <p class="label">Admin:</p> supportCD@gmail.com
             </div>
-
-            <!-- Mission du CID -->
-            <div class="col-md-4">
-                <h2>Mission du CID</h2>
-                <p>Bref aperçu de la mission du CID</p>
-                <a href="URL_PAGE_PLUS_DETAILS" class="btn btn-primary">En savoir plus</a>
+            <div class="info-block">
+                <h2>Lieu</h2>
+                <p>Avenue des Facultés, Le Bailly, 80025 Amiens</p>
+            </div>
+            <div class="info-block">
+                <h2>Réseaux</h2>
+                <p class="social-media label">Instagram:</p>
+                <p>CDAmiens</p>
+                <p class="social-media label">Facebook:</p>
+                <p>CD-Amiens</p>
+                <p class="social-media label">Twitter:</p>
+                <p>AmiensCD</p>
             </div>
         </div>
-    </section>
-    
-
-    <div class="container py-5 bg-light mt-4">
-        <div class="row">    
-                <!-- Section Événements -->
-                
-                <section class="container py-5 bg-light mt-4">
-                    <h1 class="text-center mb-4">Événements</h1>
-                    <div class="row" id="eventsPreview">
-                        <!-- Ici sera chargé dynamiquement l'aperçu des événements les plus récents -->
+        <div class="contact-form">
+            <div class="form-left">
+                <h2>Comment pouvons-nous vous aider?</h2>
+                <form action="submit_form" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="name">
                     </div>
-                    <div class="text-center mt-3">
-                        <a href="../SiteSae/pages/page connexion.html" class="btn btn-primary">Voir tous les événements</a>
+                    <div class="form-group">
+                        <label for="mail">Mail:</label>
+                        <input type="email" id="mail" name="mail">
                     </div>
-                </section>
-
-        </div>
-        
-    </div>
-    <div class="container py-5 bg-light mt-4">
-    <section class="connexion-section">
-        <div class="container">
-            <div class="row">
-                <!-- Partie "Inscrivez-vous" -->
-                <div class="col-md-6">
-                    <h2>Inscrivez-vous</h2>
-                    <p>Rejoignez notre communauté en créant un compte sur notre site pour bénéficier de nombreux avantages."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <a href="../SiteSae/pages/Inscription.html" class="btn btn-primary">Inscription</a>
-                </div>
-                <!-- Partie "Connectez-vous" -->
-                <div class="col-md-6">
-                    <h2>Connectez-vous</h2>
-                    <p>Si vous avez déjà un compte, connectez-vous pour accéder à votre espace personnel.</p>
-                    <a href="../SiteSae/pages/page connexion.html" class="btn btn-primary">Connexion</a>
+                    <div class="form-group">
+                        <label for="subject">Sujet:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-right">
+                <div class="image-placeholder">
+                    <img src="/image-iut.webp*" alt="Description de l'image" width="300" height="200">
                 </div>
             </div>
         </div>
-    </section>
-        
     </div>
 
     <footer class=" pt-4 pb-0" style="background-color: #E4E4E4;" > 
@@ -174,51 +158,74 @@
     </footer>
     
 
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const eventsPreview = document.getElementById("eventsPreview");
-    
-            // Exemple de données factices pour les événements avec des images
-            const recentEvents = [
-                {
-                    title: "Événement 1",
-                    description: "Description de l'événement 1",
-                    image: "../SiteSae/assets/imgs/logoCID.png"
-                },
-                {
-                    title: "Événement 2",
-                    description: "Description de l'événement 2",
-                    image: "../assets/imgs/logoIUT.jpg"
-                },
-                
-                // Ajoutez d'autres événements avec des images ici...
-            ];
-    
-            // Création des éléments HTML pour les événements récents avec images
-            recentEvents.forEach(event => {
-                const eventElement = document.createElement("div");
-                eventElement.classList.add("col-md-4");
-                eventElement.innerHTML = `
-                    <div class="card mb-4 shadow-sm">
-                        <img src="${event.image}" class="card-img-top" alt="${event.title}">
-                        <div class="card-body">
-                            <h3>${event.title}</h3>
-                            <p class="card-text">${event.description}</p>
-                            <a href="URL_DETAIL_EVENEMENT_${event.id}" class="btn btn-sm btn-outline-secondary">En savoir plus</a>
-                        </div>
-                    </div>
-                `;
-                eventsPreview.appendChild(eventElement);
-            });
-        });
-    </script>
-    
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
+
+
+
+<!-- <div class="contact-container">
+        <div class="contact-header">
+            <h1>Nous contacter</h1>
+        </div>
+        <div class="contact-info">
+            <div class="info-block">
+                <h2>Numéro</h2>
+                <p class="label">Tel:</p> +33(0)225340040
+                <p class="label">Fax:</p> +33(0)225366353
+            </div>
+            <div class="info-block">
+                <h2>Mail</h2>
+                <p class="label">General:</p> infoCD@gmail.com
+                <p class="label">Admin:</p> supportCD@gmail.com
+            </div>
+            <div class="info-block">
+                <h2>Lieu</h2>
+                <p>Avenue des Facultés, Le Bailly, 80025 Amiens</p>
+            </div>
+            <div class="info-block">
+                <h2>Réseaux</h2>
+                <p class="social-media label">Instagram:</p>
+                <p>CDAmiens</p>
+                <p class="social-media label">Facebook:</p>
+                <p>CD-Amiens</p>
+                <p class="social-media label">Twitter:</p>
+                <p>AmiensCD</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="form-left">
+                <h2>Comment pouvons-nous vous aider?</h2>
+                <form action="submit_form" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Mail:</label>
+                        <input type="email" id="mail" name="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-right">
+                <div class="image-placeholder">
+                    <img src="/image-iut.webp*" alt="Description de l'image" width="300" height="200">
+                </div>
+            </div>
+        </div>
+    </div> -->
