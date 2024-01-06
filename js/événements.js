@@ -1,3 +1,59 @@
+
+
+
+
+/*  Différentes manière de crée un événements */
+
+
+
+
+
+
+
+
+
+
+/*
+// Récupérer la liste d'événements depuis le stockage local
+let events = JSON.parse(localStorage.getItem('events')) || [];
+
+// Fonction pour ajouter un nouvel événement
+function addEvent(event) {
+    events.push(event);
+    updateLocalStorage();
+}
+
+// Fonction pour mettre à jour le stockage local avec la liste d'événements actuelle
+function updateLocalStorage() {
+    localStorage.setItem('events', JSON.stringify(events));
+}
+
+// Exemple d'utilisation pour ajouter un événement
+let newEvent = {
+    title: "Nouvel Événement",
+    date: "2024-01-10",
+    description: "Description de l'événement"
+};
+
+addEvent(newEvent);
+
+// Vous pouvez maintenant utiliser la variable 'events' pour accéder à la liste des événements stockés
+console.log(events);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function ajouterEvenement() {
     if (!validerChamps()) {
         alert("Veuillez remplir tous les champs.");
@@ -57,3 +113,4 @@ function ajouterEvenementALaListeEvenements(nouvelEvenement) {
     evenementsExistants.push(nouvelEvenement);
     afficherEvenements();
 }
+*/

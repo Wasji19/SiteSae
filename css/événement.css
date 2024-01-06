@@ -1,36 +1,38 @@
-
-.navbar{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
+
+.main-content {
+    flex: 1;
+}
+
 
 .navbar-brand {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 
-
-/* Ajoutez ces styles à votre fichier CSS (événement.css) ou dans le style en ligne */
 .ajouter-btn {
     margin-bottom: 20px; /* Ajustez la valeur de la marge selon vos besoins */
 }
 
 .liste-evenements {
     margin-top: 20px; /* Ajustez la valeur de la marge selon vos besoins */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-
-/********************************************************************************/
-/* Styles pour le footer */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #E4E4E4;
+    padding-top: 150px;
 }
 
 .footer h3 {
@@ -70,18 +72,32 @@
     margin: 0;
 }
 
-
-
-
 .p .a {
-
     color: #0096ED;
     float: left;
     width: 20px;
 }
 
+.footer .h5 {
+    color: black;
+}
 
-.footer .h5{
 
-    color:black;
+/* Ajoutez ces styles pour éviter que le footer ne chevauche le contenu principal */
+@media (max-width: 767px) {
+    .footer {
+        position: relative;
+        clear: both;
+    }
+}
+
+/* Vous pouvez également ajuster ces styles pour les liens du footer */
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #0096ED;
+    text-decoration: underline;
 }
