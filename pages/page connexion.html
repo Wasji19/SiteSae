@@ -52,15 +52,15 @@
         <div class="imgBox"></div>
         <div class="contentBox">
             <div class="formbox">
-                <h2>Connecter vous</h2>
-                <form action="#">
+                <h2>Connectez-vous</h2>
+                <form action="connexion.php" method="post">
                     <div class="inputBx">
                         <span>Email</span>
-                        <input type="text">
+                        <input type="email" name="email" required>
                     </div>
                     <div class="inputBx">
                         <span>Mot de passe</span>
-                        <input type="password">
+                        <input type="password" name="password" required>
                     </div>
                     <div class="remember">
                         <label> <input type="checkbox"> Se souvenir de moi </label>
