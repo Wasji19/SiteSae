@@ -57,32 +57,36 @@
         <div class="contentBox">
             <div class="formbox">
                 <h2>S'inscrire</h2>
-                <form action="#">
+                <form action="inscription.php" method="post">
                     <div class="inputBx">
                         <span>Nom</span>
-                        <input type="text">
+                        <input type="text" name="nom">
                     </div>
                     <div class="inputBx">
                         <span>Prénom</span>
-                        <input type="text">
+                        <input type="text" name="prenom">
                     </div>
                     <div class="inputBx">
                         <span>Email</span>
-                        <input type="email">
+                        <input type="email" name="email">
                     </div>
                     <div class="inputBx">
                         <span>Mot de passe</span>
-                        <input type="password">
+                        <input type="password" name="password">
                     </div>
                     <div class="inputBx">
                         <span>Confirmez mot de passe</span>
-                        <input type="password">
+                        <input type="password" name="confirm_password">
                     </div>
                     <div class="inputBx">
                         <input type="submit" value=" S'inscrire ">
                     </div>
                     <div class="inputBx">
+<<<<<<< HEAD
                         <p>Déjà un compte ? <a href="../pages/page connexion.html"> Connecter vous</a></p>
+=======
+                        <p>Déjà un compte ? <a href="#"> Connectez-vous</a></p>
+>>>>>>> 4bbd208fe4cd604f0ce1651a91b9fdb35ea8d553
                     </div>
                 </form>
             </div>
