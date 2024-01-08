@@ -23,10 +23,8 @@ try {
         session_start();
         $_SESSION['user_id'] = $utilisateur['IDUtilisateur'];
         $_SESSION['user_name'] = $utilisateur['Nom'];
-        // Redirection vers la page d'accueil ou le tableau de bord de l'utilisateur
         header("Location: index_connect.php");
     } else {
-        // Échec de la connexion, renvoyer un message d'erreur
         echo "Adresse e-mail ou mot de passe incorrect.";
     }
 
