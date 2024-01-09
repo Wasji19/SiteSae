@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 .navbar-brand {
   position: absolute;
   left: 50%;
