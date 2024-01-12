@@ -1,8 +1,4 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-}
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Navbar:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 .navbar {
     top: 0;
     width: 100%;
@@ -17,6 +13,32 @@
     transform: translateX(-50%);
     color: white; 
 }
+
+/*  ///////////////////////////////CODE////////////////////////////////////////// */
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.main-content {
+    flex: 1;
+}
+
+
 
 #cld {
     width: 80%;
@@ -134,28 +156,59 @@
 
 
 
-/*  ////////////////////////////////////////////////////////////////////////LE FOOTER /////////////////////////////////////////////////////////////////////////// 
+/*  ////////////////////////////////////////////////////////////////////////LE FOOTER /////////////////////////////////////////////////////////////////////////// */
 
 
-footer {
-    height: 100px; /* Définit la hauteur du footer à 100px 
-    background-color: #E4E4E4;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display:none;
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
 }
 
-.p .a {
+.footer h3 {
+    color: #fff;
+}
 
+.footer p {
+    color: #ccc;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    text-align: center;
+    margin: 0;
+} 
+
+.p .a {
     color: #0096ED;
     float: left;
     width: 20px;
 }
 
-
-.footer .h5{
-
-    color:black;
+.footer .h5 {
+    color: black;
 }
-*/ 

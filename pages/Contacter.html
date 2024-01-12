@@ -25,10 +25,7 @@
                     <a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/messagerie.html">Messagerie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/Calendrier.html">Services</a>
+                    <a class="nav-link" href="../pages/événements.html">événements</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,67 +46,115 @@
 </nav>
 </head>
 <body>
-<div class="contact-container">
-    <div class="contact-header">
-        <h1>Nous contacter</h1>
-    </div>
-    <div class="contact-info">
-        <div class="info-block">
-            <h2>Numéro</h2>
-            <p class="label">Tel:</p> +33(0)225340040
-            <p class="label">Fax:</p> +33(0)225366353
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Nous contacter</h1>
         </div>
-        <div class="info-block">
-            <h2>Mail</h2>
-            <p class="label">General:</p> infoCD@gmail.com
-            <p class="label">Admin:</p> supportCD@gmail.com
+        <div class="contact-info">
+            <div class="info-block">
+                <h2>Numéro</h2>
+                <p class="label">Tel:</p> +33(0)225340040
+                <p class="label">Fax:</p> +33(0)225366353
+            </div>
+            <div class="info-block">
+                <h2>Mail</h2>
+                <p class="label">General:</p> infoCD@gmail.com
+                <p class="label">Admin:</p> supportCD@gmail.com
+            </div>
+            <div class="info-block">
+                <h2>Lieu</h2>
+                <p>Avenue des Facultés, Le Bailly, 80025 Amiens</p>
+            </div>
+            <div class="info-block">
+                <h2>Réseaux</h2>
+                <p class="social-media label">Instagram:</p>
+                <p>CDAmiens</p>
+                <p class="social-media label">Facebook:</p>
+                <p>CD-Amiens</p>
+                <p class="social-media label">Twitter:</p>
+                <p>AmiensCD</p>
+            </div>
         </div>
-        <div class="info-block">
-            <h2>Lieu</h2>
-            <p>Avenue des Facultés, Le Bailly, 80025 Amiens</p>
-        </div>
-        <div class="info-block">
-            <h2>Réseaux</h2>
-            <p class="social-media label">Instagram:</p>
-            <p>CDAmiens</p>
-            <p class="social-media label">Facebook:</p>
-            <p>CD-Amiens</p>
-            <p class="social-media label">Twitter:</p>
-            <p>AmiensCD</p>
-        </div>
-    </div>
-    <div class="contact-form">
-        <div class="form-left">
-            <h2>Comment pouvons-nous vous aider?</h2>
-            <form action="submit_form" method="post">
-                <div class="form-group">
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name">
+        <div class="contact-form">
+            <div class="form-left">
+                <h2>Comment pouvons-nous vous aider?</h2>
+                <form action="submit_form" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Mail:</label>
+                        <input type="email" id="mail" name="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form-right">
+                <div class="image-placeholder">
+                    <img src="../assets/imgs/Aller_escalier.webp" alt="Description de l'image" width="300" height="200">
                 </div>
-                <div class="form-group">
-                    <label for="mail">Mail:</label>
-                    <input type="email" id="mail" name="mail">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Sujet:</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description:</label>
-                    <textarea id="description" name="description"></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="submit-button">Envoyer</button>
-                </div>
-            </form>
-        </div>
-        <div class="form-right">
-            <div class="image-placeholder">
-                <img src="../assets/imgs/Aller_escalier.webp" alt="Description de l'image" width="300" height="200">
             </div>
         </div>
     </div>
-</div>
+
+
+    <footer class=" pt-4 pb-0" style="background-color: #E4E4E4;" > 
+        <div class ="container text-center text-md-left"> 
+            <div class = " row text-center text-md-left"> 
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-"> 
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
+                        <p>
+                            <a href="#" class="" style="text-decoration : none;"> Le blog </a>
+                        </p>
+                        <p>
+                            <a href="../pages/événements.html" class="" style="text-decoration : none;"> Les événements </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Calendrier.html" class="" style="text-decoration : none;"> Calendrier </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Annuaire.html" class="" style="text-decoration : none;"> Annuaires </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Galerie.html" class="" style="text-decoration : none;"> Galerie </a>
+                        </p>
+                    
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4  font-weight-bold">A propos</h5>
+                        <p><a href="../pages/Contacter.html" class="" style="text-decoration : none;"> Nous joindre </a></p>
+                        <p><a href="../pages/Inscription.html" class="" style="text-decoration : none;"> Inscription </a></p>
+                        <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
+                        <p><a href="../pages/page connexion.html" class="" style="text-decoration : none;"> Se connecter </a></p>
+                        <p><a href="#" class="" style="text-decoration : none;"> Médias Sociaux </a></p>
+                </div>
+            
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Contact</h5>
+                        <p>
+                            <i class="fas fa-home mr-3 "></i>Avenue des Facultés, Le Bailly, 80025 Amiens
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3 "></i>Tél. +33(0)3.22.53.40.40
+                        </p>
+                        <p>
+                            <i class="fas fa-printer mr-3 "></i>Fax. +33(0)3.22.89.66.33
+                        </p>
+                </div>
+
+    </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

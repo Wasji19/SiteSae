@@ -76,6 +76,9 @@ function calendrier(year,month){
     }
 
     document.getElementById('cldT').innerText = cld[cld.length - 1 ].month.toLocaleUpperCase() + " " + cld[cld.length - 1].year
+    
+    
+    
 }
 calendrier(year,month)
 

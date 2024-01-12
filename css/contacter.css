@@ -24,6 +24,8 @@ body {
   padding: 1px 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #012E5A;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-header h1 {

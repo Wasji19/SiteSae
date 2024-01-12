@@ -1,215 +1,171 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-
-&body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: #ffffff; /* Fond blanc pour tout le site */
-}
-
-
-
-/* Style de l'en-tête */
-header {
-    background-color: #d9d9d9; /* Gris foncé */
-    color: #ffffff; /* Texte blanc */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.header-container {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement si nécessaire */
-    height: 100px; /* Ou la hauteur que vous souhaitez pour votre en-tête */
-    
-}
-
-.header-logo { 
-    max-width: 100%; /* Assurez-vous que le logo est responsive et s'adapte à la largeur du conteneur */
-    max-height: 100px; /* Hauteur maximale pour le logo */
-    align-items: center;
-}
-
-.nav-icon {
-    margin-right: 0px; 
-    font-size: 24px;
-    height: 100px;
-}
-
-.nav-icon img {
-    width: 50px; /* Définissez la largeur souhaitée */
-    height: auto;
-
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 5px;
-    margin-right: 10px; /* Espace entre le champ de texte et le bouton */
-}
-
-.search-bar button {
-    padding: 5px 15px;
-    background-color: #ffd900; /* Couleur du bouton */
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-
-
-
-
-/* Style du contenu principal */
-main {
-    padding: 20px;
-}
-
-h1 {
-    color: #0e0000; /* Gris très foncé pour les titres */
-    text-align: center;
-}
-
-/* Style des titres de section */
-h2 {
-    color: #0e0000; /* Gris très foncé pour les titres */
-    font-weight: 700;
-    margin-left: 60px;
-}
-
-/* Style des paragraphes */
-p {
-    color: #080000; /* Gris moyen pour le texte */
-    font-weight: 400;
-    margin-left: 50px;
-    
-}
-
-
-.content-container{
-    display: flex;
-    justify-content: space-between;
-}
-.team-section, .about{
-    flex: 1;
-    margin: 10px;
-}
-
-.lower-content {
-    text-align: center; /* Centre les éléments */
-}
-
-.team-section h2 {
-   
-    margin-bottom: 20px; /* Ajoute un espace en dessous du titre */
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-     /* Centre les membres si moins de largeur */
-}
-
-.team-member {
-    display: flex;
-    align-items: center; /* Centrer verticalement l'icône avec le texte */
-    margin-bottom: 10px; /* Espace entre les membres du bureau */
-    
-}
-
-.team-member img {
-    margin-left: 20px; /* Espace entre l'icône et le texte */
-    width: 150px; /* Taille de l'icône */
-    height: auto;
-}
-
-.team-member span {
-    font-weight: bold;
-    margin-right: 120px;
-}
-
-.president-message {
-    padding: 5px 10px; /*pas fini*/
-}
-
-.lower-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
-
-.team, .about {
-    flex: 1; /* Flex each child equally */
-    margin: 0 10px;
-}
-
-/* Responsive adjustments if needed */
-@media (max-width: 768px) {
-    .lower-content {
-        flex-direction: column;
+    *{
+        font-family: 'Montserrat', sans-serif;
     }
+
+    &body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: #ffffff; /* Fond blanc pour tout le site */
+    }
+
+
+
+    /* Style de l'en-tête */
+    .navbar {
+        background-color: #d9d9d9; /* Gris foncé */
+        color: #ffffff; /* Texte blanc */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+
+    
+    .title-container{
+        margin-top: 20px;
+    }
+
+
+
+
+    /* Style du contenu principal */
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        color: #0e0000; /* Gris très foncé pour les titres */
+        text-align: center;
+    }
+
+    /* Style des titres de section */
+    h2 {
+        color: #0e0000; /* Gris très foncé pour les titres */
+        font-weight: 700;
+        margin-left: 60px;
+    }
+
+    /* Style des paragraphes */
+    p {
+        color: #080000; /* Gris moyen pour le texte */
+        font-weight: 400;
+        margin-left: 50px;
+        
+    }
+
+
+    .content-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .team-section, .about{
+        flex: 1;
+        margin: 10px;
+    }
+
+    .lower-content {
+        text-align: center; /* Centre les éléments */
+    }
+
+    .team-section h2 {
+    
+        margin-bottom: 20px; /* Ajoute un espace en dessous du titre */
+    }
+
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        /* Centre les membres si moins de largeur */
+    }
+
+    .team-member {
+        display: flex;
+        align-items: center; /* Centrer verticalement l'icône avec le texte */
+        margin-bottom: 10px; /* Espace entre les membres du bureau */
+        
+    }
+
+    .team-member img {
+        margin-left: 20px; /* Espace entre l'icône et le texte */
+        width: 150px; /* Taille de l'icône */
+        height: auto;
+    }
+
+    .team-member span {
+        font-weight: bold;
+        margin-right: 120px;
+    }
+
+    .president-message {
+        padding: 5px 10px; /*pas fini*/
+    }
+
+    .lower-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
 
     .team, .about {
-        margin: 0 0 10px 0;
-        flex-basis: auto; /* Reset flex-basis for mobile */
+        flex: 1; /* Flex each child equally */
+        margin: 0 10px;
     }
-    
-    
-    }
+
+
+
+
     footer {
         background-color: #d9d9d9;
         color: #0f0f0f;
         font-weight: bold;
-        padding-top: 20px;
+        padding-top: 70px;
     }
-    
+
     .footer-content {
         display: flex;
         justify-content: space-evenly;
         
     }
-    
-   
+
+
     .footer-section h4 {
         margin-top: 0;
         
     }
-    
+
     .footer-section contacter p {
-         margin-left: auto;
+        margin-left: auto;
     }
 
-    
-    
+
+
 
     .footer-section ul li a {
         color: #0096ed;
         text-decoration: none;
     }
-    
+
     .footer-section h4 {
         margin-bottom: 20px;
     }
-    
+
     .footer-section ul {
         list-style-type: none;
         padding: 0;
         margin: 0 20px 0 0;
         display: inline-block; /* Aligns the lists side by side */
     }
-    
+
     .footer-section ul li a {
         display: block;
         color: #0096ed;
@@ -217,10 +173,24 @@ p {
         text-decoration: none;
         transition: color 0.3s; /* Smooth transition for hover effect */
     }
-    
+
     .footer-section ul li a:hover {
         color: #caac00; /* Change the color on hover */
     }
+    /* Responsive adjustments if needed */
+    @media (max-width: 768px) {
+        .lower-content {
+            flex-direction: column;
+        }
+
+        .team, .about {
+            margin: 0 0 10px 0;
+            flex-basis: auto; /* Reset flex-basis for mobile */
+        }
+        
+        
+    }
+    
     
   
   
