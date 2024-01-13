@@ -3,7 +3,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
+.navbar{
+    background-color: #d9d9d9;
+}
 .navbar-brand {
     position: absolute;
     left: 50%;
@@ -13,7 +15,7 @@
 
 
 body{
-    background-color: white;
+    background-color: #e4e4e4;
 }
 
 
@@ -102,9 +104,10 @@ body{
 /********************************************************************************/
 /* Styles pour le footer */
 .footer {
-    background-color: #333;
-    color: #fff;
+    
+    
     padding: 50px 0;
+    margin-top: 20px;
 }
 
 .footer h3 {
