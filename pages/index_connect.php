@@ -15,16 +15,16 @@ if (!isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../SiteSae/css/style.css">
+    <link rel="stylesheet" href="../css/Accueil2.css">
    
     <title>Site</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Remplacez le texte par votre logo -->
             <a class="navbar-brand" href="../SiteSae/index.html">
-                <img src="../SiteSae/assets/imgs/logoCID.png" alt="Logo" height="50">
+                <img src="../assets/imgs/logoCID.png" alt="Logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,10 @@ if (!isset($_SESSION['user_id'])) {
                         <a class="nav-link" href="../SiteSae/index.html">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../SiteSae/pages/apropos.html">À Propos</a>
+                        <a class="nav-link" href="../index.html">Déconnexion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../SiteSae/pages/services.html">Services</a>
+                        <a class="nav-link" href="../pages/événements.html">Événement</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,7 +64,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <section class="accueil bg-dark d-flex w-100 h-150vh flex-column justify-content-center align-items-center">
         <!-- Contenu de la section -->
-        <h1 class="display-1 text-white text-center"><img src="../SiteSae/assets/imgs/logoCID.png" alt="Logo" height="140"></h1>
+        <h1 class="display-1 text-white text-center"><img src="../assets/imgs/logoCID.png" alt="Logo" height="140"></h1>
     </section>
 
     <!-- Section Présentation du CID -->
@@ -81,9 +81,11 @@ if (!isset($_SESSION['user_id'])) {
             <div class="col-md-4">
                 <h2>Membres du Bureau</h2>
                 <ul>
-                    <li>Président:</li>
-                    <li>Trésorier:</li>
-                    <li>Admin du site:</li>
+                    <li>Président : Levan Kaipajyan</li>
+                    <li>Trésorier : Furkan Mutlu </li>
+                    <li>Admin du site : Wanis Almeida Dos Santos </li>
+                    <li>Modérateur : Ismail Charkaoui  </li>
+                    <li>Doyen: Wassim El Jilali  </li>
                 </ul>
             </div>
 
@@ -91,7 +93,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="col-md-4">
                 <h2>Mission du CID</h2>
                 <p>Bref aperçu de la mission du CID</p>
-                <a href="URL_PAGE_PLUS_DETAILS" class="btn btn-primary">En savoir plus</a>
+                <a href="../SiteSae/pages/presentationducid.html" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
     </section>
@@ -107,13 +109,14 @@ if (!isset($_SESSION['user_id'])) {
                         <!-- Ici sera chargé dynamiquement l'aperçu des événements les plus récents -->
                     </div>
                     <div class="text-center mt-3">
-                        <a href="URL_PAGE_EVENEMENTS" class="btn btn-primary">Voir tous les événements</a>
+                        <a href="../pages/page connexion.html" class="btn btn-primary">Voir tous les événements</a>
                     </div>
                 </section>
 
         </div>
         
     </div>
+
     <div class="container py-5 bg-light mt-4">
     <section class="connexion-section">
         <div class="container">
@@ -126,38 +129,38 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
     </section>
-        
     </div>
-    <footer class=" pt-4 pb-0" style="background-color: #E4E4E4;" > 
+
+
+    <footer class=" pt-4 pb-0" style="background-color: #d9d9d9;"> 
         <div class ="container text-center text-md-left"> 
             <div class = " row text-center text-md-left"> 
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-"> 
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> 
                     <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
                         <p>
                             <a href="#" class="" style="text-decoration : none;"> Le blog </a>
                         </p>
                         <p>
-                            <a href="#" class="" style="text-decoration : none;"> Les événements </a>
+                            <a href="../pages/événements.html" class="" style="text-decoration : none;"> Les événements </a>
                         </p>
                         <p>
-                            <a href="#" class="" style="text-decoration : none;"> Actualités </a>
+                            <a href="../pages/Calendrier.html" class="" style="text-decoration : none;"> Calendrier </a>
                         </p>
                         <p>
-                            <a href="../SiteSae/pages/Annuaire.html" class="" style="text-decoration : none;"> Annuaires </a>
+                            <a href="../pages/Annuaire.html" class="" style="text-decoration : none;"> Annuaires </a>
                         </p>
                         <p>
-                            <a href="../SiteSae/pages/Galerie.html" class="" style="text-decoration : none;"> Galerie </a>
+                            <a href="../pages/Galerie.html" class="" style="text-decoration : none;"> Galerie </a>
                         </p>
-                        <p>
-                            <a href="#" class="" style="text-decoration : none;"> Médias Sociaux </a>
-                        </p>
+                    
                 </div>
-<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4  font-weight-bold">A propos</h5>
-                        <p><a href="#" class="" style="text-decoration : none;"> Nous joindre </a></p>
-                        <p><a href="#" class="" style="text-decoration : none;"> Inscription </a></p>
+                        <p><a href="../pages/Contacter.html" class="" style="text-decoration : none;"> Nous joindre </a></p>
+                        <p><a href="../pages/Inscription.html" class="" style="text-decoration : none;"> Inscription </a></p>
                         <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
-                        <p><a href="#" class="" style="text-decoration : none;"> Se connecter </a></p>
+                        <p><a href="../pages/page connexion.html" class="" style="text-decoration : none;"> Se connecter </a></p>
+                        <p><a href="#" class="" style="text-decoration : none;"> Médias Sociaux </a></p>
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
@@ -172,7 +175,9 @@ if (!isset($_SESSION['user_id'])) {
                             <i class="fas fa-printer mr-3 "></i>Fax. +33(0)3.22.89.66.33
                         </p>
                 </div>
-
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

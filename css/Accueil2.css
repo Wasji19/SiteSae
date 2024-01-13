@@ -1,7 +1,11 @@
+
 *{
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar{
+    background-color: #d9d9d9;
+}
 .navbar-brand {
     position: absolute;
     left: 50%;
@@ -9,12 +13,151 @@
     
 }
 
-body{
-    background-color: white;
 
+body{
+    background-color: #e4e4e4;
 }
 
-.navbar{
-    background-color: red;
-    color: red;
+
+.accueil {
+    background: url(../assets/imgs/maxresdefault.jpg);
+    background-size: cover;
+    background-position: left;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 40vh; /* Ajustez la hauteur selon vos besoins */
+}
+/********************************************/
+/* Styles pour permettre le retour à la ligne du texte */
+.col-md-4 {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.col-md-4 p {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+
+
+/*****************************************************************************************/
+/* Styles pour la section d'inscription/connexion */
+.connexion-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.connexion-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.connexion-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.connexion-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.connexion-section .col-md-6 {
+    padding: 20px;
+    text-align: center;
+}
+
+.connexion-section .col-md-6:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.connexion-section a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.connexion-section a.btn:hover {
+    background-color: #ffffff;
+}
+
+.connexion-section .col-md-6:first-child {
+    border-right: 2px solid #ccc; /* Bordure à droite de la première colonne */
+    padding-right: 30px; /* Ajustement de l'espacement pour séparer la bordure du contenu */
+}
+
+.connexion-section .col-md-6:last-child {
+    border-left: 2px solid #ccc; /* Bordure à gauche de la seconde colonne */
+    padding-left: 30px; /* Ajustement de l'espacement pour séparer la bordure du contenu */
+}
+
+/********************************************************************************/
+/* Styles pour le footer */
+.footer {
+    
+    
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.footer p {
+    color: #ccc;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    text-align: center;
+    margin: 0;
+} 
+
+
+
+.p .a {
+
+    color: #0096ED;
+    float: left;
+    width: 20px;
+}
+
+
+.footer .h5{
+
+    color:black;
 }
