@@ -138,7 +138,7 @@ if (!isset($_SESSION['user_id'])) {
                             <a href="../pages/Calendrier.html" class="" style="text-decoration : none;"> Calendrier </a>
                         </p>
                         <p>
-                            <a href="../pages/Annuaire.html" class="" style="text-decoration : none;"> Annuaires </a>
+                            <a href="../pages/Annuaire.php" class="" style="text-decoration : none;"> Annuaires </a>
                         </p>
                         <p>
                             <a href="../pages/Galerie.html" class="" style="text-decoration : none;"> Galerie </a>
