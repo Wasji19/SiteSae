@@ -16,8 +16,8 @@
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #d9d9d9;" >
         <div class="container">
             <!-- Remplacez le texte par votre logo -->
-            <a class="navbar-brand" href="#">
-                <img src="../assets/imgs/logoCID.png" alt="Logo" height="50">
+            <a class="navbar-brand" href="../SiteSae/index.html">
+                <img src="../SiteSae/assets/imgs/logoCID.png" alt="Logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,13 +25,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../pages/index_connect.php">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../SiteSae/index.html">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/événements.html">événement</a>
+                        <a class="nav-link" href="../SiteSae/pages/messagerie.html">Messagerie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Déconnexion</a>
+                        <a class="nav-link" href="../SiteSae/pages/Calendrier.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Connexion
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../SiteSae/pages/page connexion.html">Se connecter</a>
+                            <a class="dropdown-item" href="../SiteSae/pages/Inscription.html">S'inscrire</a>
+                        </div>
                     </li>
                 </ul>
                 <form class="form-inline ml-auto">
@@ -45,7 +54,7 @@
     <section id="evenements" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Événements</h2>
-    
+
             <!-- Formulaire pour ajouter de nouveaux événements -->
             <form id="formEvenement">
                 <div class="form-group">
@@ -57,59 +66,56 @@
                     <textarea class="form-control" id="descriptionEvenement" rows="3" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="imageEvenement">URL de l'image:</label>
-                    <input type="text" class="form-control" id="imageEvenement" required>
+                    <label for="dateEvenement">Date de l'événement:</label>
+                    <input type="date" class="form-control" id="dateEvenement" required>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="ajouterEvenement()">Ajouter Événement</button>
+                <div class="form-group">
+                    <label for="lieuEvenement">Lieu de l'événement:</label>
+                    <input type="text" class="form-control" id="lieuEvenement" required>
+                </div>
+                <button type="button" onclick="ajouterEvenement()">Ajouter Événement</button>
             </form>
-    
-            <!-- Liste des événements existants -->
-            <div class="row" id="listeEvenements">
-                <!-- Cette partie sera mise à jour dynamiquement avec JavaScript -->
-            </div>
-        </div>
-    </section>
-    
-    <script>
-        // Fonction pour ajouter un événement à la liste
-        function ajouterEvenement() {
-            // Récupérer les valeurs du formulaire
-            var nomEvenement = document.getElementById('nomEvenement').value;
-            var descriptionEvenement = document.getElementById('descriptionEvenement').value;
-            var imageEvenement = document.getElementById('imageEvenement').value;
-    
-            // Créer une nouvelle carte d'événement
-            var nouvelleCarte = `
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <img src="${imageEvenement}" class="card-img-top" alt="${nomEvenement}">
-                        <div class="card-body">
-                            <h5 class="card-title">${nomEvenement}</h5>
-                            <p class="card-text">${descriptionEvenement}</p>
-                            <a href="#" class="btn btn-primary">En savoir plus</a>
-                        </div>
-                    </div>
-                </div>
-            `;
-    
-            // Ajouter la nouvelle carte à la liste des événements
-            document.getElementById('listeEvenements').innerHTML += nouvelleCarte;
-    
-            // Effacer les champs du formulaire
-            document.getElementById('nomEvenement').value = '';
-            document.getElementById('descriptionEvenement').value = '';
-            document.getElementById('imageEvenement').value = '';
-        }
-    </script>
 
-    
-    
+                <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                <script>
+                    function ajouterEvenement() {
+                        // Récupérer les valeurs du formulaire
+                        var titre = document.getElementById('nomEvenement').value;
+                        var description = document.getElementById('descriptionEvenement').value;
+                        var dateEvenement = document.getElementById('dateEvenement').value;
+                        var lieu = document.getElementById('lieuEvenement').value;
+
+                        // Créer un objet FormData pour envoyer les données
+                        var formData = new FormData();
+                        formData.append('nomEvenement', titre);
+                        formData.append('descriptionEvenement', description);
+                        formData.append('dateEvenement', dateEvenement);
+                        formData.append('lieuEvenement', lieu);
+
+                        // Utiliser la fonction fetch pour envoyer les données au serveur
+                        fetch('ajouter_evenement.php', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                        })
+                        .catch(error => {
+                            console.error('Erreur lors de l\'envoi de la requête:', error);
+                        });
+                    }
+                </script>
+
+
+
+
 
     <!--
-    <footer class=" pt-4 pb-0" style="background-color: #d9d9d9;" > 
-        <div class ="container text-center text-md-left"> 
-            <div class = " row text-center text-md-left"> 
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-"> 
+    <footer class=" pt-4 pb-0" style="background-color: #d9d9d9;" >
+        <div class ="container text-center text-md-left">
+            <div class = " row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
                         <p>
                             <a href="#" class="" style="text-decoration : none;"> Le blog </a>
@@ -134,7 +140,7 @@
                     <h5 class="text-uppercase mb-4  font-weight-bold">A propos</h5>
                         <p><a href="#" class="" style="text-decoration : none;"> Nous joindre </a></p>
                         <p><a href="#" class="" style="text-decoration : none;"> Inscription </a></p>
-                        <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
+                        <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p>
                         <p><a href="#" class="" style="text-decoration : none;"> Se connecter </a></p>
                 </div>
 
@@ -151,7 +157,7 @@
                         </p>
                 </div>
 
-    </footer> 
+    </footer>
                     -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
