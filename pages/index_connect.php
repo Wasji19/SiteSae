@@ -4,7 +4,7 @@ session_start();
 // Vérifier si la variable de session pour l'identification de l'utilisateur existe
 if (!isset($_SESSION['user_id'])) {
     // Rediriger l'utilisateur vers la page de connexion s'il n'est pas connecté
-    header("Location: ../SiteSae/pages/page_connexion.html");
+    header("Location: ../pages/page_connexion.html");
     exit; // Arrêter l'exécution du reste du code
 }
 ?>
