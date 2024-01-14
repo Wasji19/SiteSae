@@ -23,7 +23,7 @@ if (!isset($_SESSION['user_id'])) {
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Remplacez le texte par votre logo -->
-            <a class="navbar-brand" href="../SiteSae/index.html">
+            <a class="navbar-brand" href="#">
                 <img src="../assets/imgs/logoCID.png" alt="Logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,22 +32,13 @@ if (!isset($_SESSION['user_id'])) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../SiteSae/index.html">Accueil <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Déconnexion</a>
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/événements.html">Événement</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Connexion
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="../SiteSae/pages/page connexion.html">Se connecter</a>
-                            <a class="dropdown-item" href="../SiteSae/pages/Inscription.html">S'inscrire</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Déconnexion</a>
                     </li>
                 </ul>
                 <form class="form-inline ml-auto">
@@ -93,7 +84,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="col-md-4">
                 <h2>Mission du CID</h2>
                 <p>Bref aperçu de la mission du CID</p>
-                <a href="../SiteSae/pages/presentationducid.html" class="btn btn-primary">En savoir plus</a>
+                <a href="../pages/presentationducid.html" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
     </section>
@@ -109,7 +100,7 @@ if (!isset($_SESSION['user_id'])) {
                         <!-- Ici sera chargé dynamiquement l'aperçu des événements les plus récents -->
                     </div>
                     <div class="text-center mt-3">
-                        <a href="../pages/page connexion.html" class="btn btn-primary">Voir tous les événements</a>
+                        <a href="../pages/événements.html" class="btn btn-primary">Voir tous les événements</a>
                     </div>
                 </section>
 

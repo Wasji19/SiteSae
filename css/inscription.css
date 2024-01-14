@@ -77,7 +77,7 @@ section h2 {
 }
 
 .inputBx input[type="submit"]:hover {
-    background-color: yellow;                  /* ici c'est la couleur du bouton quand on passe dessus */
+    background-color: #22a8f6;                 /* ici c'est la couleur du bouton quand on passe dessus */
 }
 
 .remember {
