@@ -7,3 +7,44 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e4e4e4;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.text-center {
+    display: flex;
+
+}
+
+.mon-bouton{
+font-size: 18px;
+font-weight: 400;
+background-color: #0096ED;
+color: white;
+padding: 10px 20px;
+border: none; 
+border-radius: 5px; 
+cursor: pointer; 
+margin-left: 425px;
+}     
+      
+.mon-bouton:hover {
+    background-color: #22a8f6;  
+      
+}
+
+.liste-evenements {
+    margin-top: 20px; /* Ajustez la valeur de la marge selon vos besoins */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
