@@ -64,38 +64,58 @@
                     <label for="lieuEvenement">Lieu de l'événement:</label>
                     <input type="text" class="form-control" id="lieuEvenement" required>
                 </div>
+                <div class="form-group">
+                    <label for="imageEvenement">Image de l'événement:</label>
+                    <input type="file" class="form-control" id="imageEvenement" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephoneEvenement">Numéro de téléphone:</label>
+                    <input type="tel" class="form-control" id="telephoneEvenement" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailEvenement">Adresse e-mail:</label>
+                    <input type="email" class="form-control" id="emailEvenement" required>
+                </div>
                 <button class="text-center mt-4 mon-bouton" type="button" onclick="ajouterEvenement()">Ajouter Événement</button>
             </form>
 
                 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                 <script>
-                    function ajouterEvenement() {
-                        // Récupérer les valeurs du formulaire
-                        var titre = document.getElementById('nomEvenement').value;
-                        var description = document.getElementById('descriptionEvenement').value;
-                        var dateEvenement = document.getElementById('dateEvenement').value;
-                        var lieu = document.getElementById('lieuEvenement').value;
+                function ajouterEvenement() {
+                    // Récupérer les valeurs du formulaire
+                    var titre = document.getElementById('nomEvenement').value;
+                    var description = document.getElementById('descriptionEvenement').value;
+                    var dateEvenement = document.getElementById('dateEvenement').value;
+                    var lieu = document.getElementById('lieuEvenement').value;
+                    var image = document.getElementById('imageEvenement').files[0]; // Récupérer le fichier d'image
+                    var telephone = document.getElementById('telephoneEvenement').value;
+                    var email = document.getElementById('emailEvenement').value;
 
-                        // Créer un objet FormData pour envoyer les données
-                        var formData = new FormData();
-                        formData.append('nomEvenement', titre);
-                        formData.append('descriptionEvenement', description);
-                        formData.append('dateEvenement', dateEvenement);
-                        formData.append('lieuEvenement', lieu);
+                    // Créer un objet FormData pour envoyer les données
+                    var formData = new FormData();
+                    formData.append('nomEvenement', titre);
+                    formData.append('descriptionEvenement', description);
+                    formData.append('dateEvenement', dateEvenement);
+                    formData.append('lieuEvenement', lieu);
+                    formData.append('imageEvenement', image);
+                    formData.append('telephoneEvenement', telephone);
+                    formData.append('emailEvenement', email);
 
-                        // Utiliser la fonction fetch pour envoyer les données au serveur
-                        fetch('ajouter_evenement.php', {
-                            method: 'POST',
-                            body: formData
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            console.log(data);
-                        })
-                        .catch(error => {
-                            console.error('Erreur lors de l\'envoi de la requête:', error);
-                        });
-                    }
+                    // Utiliser la fonction fetch pour envoyer les données au serveur
+                    fetch('ajouter_evenement.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        console.error('Erreur lors de l\'envoi de la requête:', error);
+                    });
+                }
                 </script>
 
 

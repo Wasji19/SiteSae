@@ -56,15 +56,27 @@
                 <form action="inscription.php" method="post">
                     <div class="inputBx">
                         <span>Nom</span>
-                        <input type="text" name="nom">
+                        <input type="text" name="nom" required>
                     </div>
                     <div class="inputBx">
                         <span>Prénom</span>
-                        <input type="text" name="prenom">
+                        <input type="text" name="prenom" required>
                     </div>
                     <div class="inputBx">
                         <span>Email</span>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="inputBx">
+                        <span>Date de Naissance</span>
+                        <input type="date" name="dateNaissance" required>
+                    </div>
+                    <div class="inputBx">
+                        <span>Est tu un ancien étudiant ?</span>
+                        <input type="checkbox" name="estAncienEtudiant" required>
+                    </div>
+                    <div class="inputBx">
+                        <span>Année de promotion</span>
+                        <input type="text" name="anneepromo" required>
                     </div>
                     <div class="inputBx">
                         <input type="submit" value=" S'inscrire ">
