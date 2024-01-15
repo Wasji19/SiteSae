@@ -151,6 +151,8 @@ $resultRoles = $conn->query($sqlRoles);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/">
     <title>Gérer les Utilisateurs</title>
 </head>
 <body>
@@ -175,11 +177,13 @@ $resultRoles = $conn->query($sqlRoles);
     <label for="dateNaissance">Date de naissance :</label>
     <input type="date" name="dateNaissance" required>
 
+    <label for="idPromotion">ID Promotion :</label>
+    <input type="text" name="idPromotion" required>
+
     <label for="estAncienEtudiant">Ancien étudiant :</label>
     <input type="checkbox" name="estAncienEtudiant">
 
-    <label for="idPromotion">ID Promotion :</label>
-    <input type="text" name="idPromotion" required>
+  
 
     <label for="role">Rôle :</label>
         <select name="role" required>
@@ -214,11 +218,11 @@ $resultRoles = $conn->query($sqlRoles);
     <label for="dateNaissance">Date de naissance :</label>
     <input type="date" name="dateNaissance">
 
-    <label for="estAncienEtudiant">Ancien étudiant :</label>
-    <input type="checkbox" name="estAncienEtudiant">
-
     <label for="idPromotion">ID Promotion :</label>
     <input type="text" name="idPromotion">
+
+    <label for="estAncienEtudiant">Ancien étudiant :</label>
+    <input type="checkbox" name="estAncienEtudiant">
 
     <label for="role">Rôle :</label>
     <select name="role" required>
@@ -234,14 +238,12 @@ $resultRoles = $conn->query($sqlRoles);
     <input type="submit" name="modifierUtilisateur" value="Modifier Utilisateur">
 </form>
 
-<!-- Formulaire pour supprimer les doublons -->
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <h2>Supprimer les Doublons</h2>
     <input type="submit" name="supprimerDoublons" value="Supprimer Doublons">
 </form>
 
 
-<!-- Afficher la liste des utilisateurs -->
 <h2>Liste des Utilisateurs</h2>
 <table border="1">
     <tr>

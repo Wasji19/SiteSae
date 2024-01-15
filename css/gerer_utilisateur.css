@@ -1,0 +1,120 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e4e4e4;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar{
+width: 100%;
+
+}
+
+h1, h2 {
+    font: size 25px;;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px; /* Add padding for spacing */
+    font-weight: bold; /* Make headings bold */
+}
+
+form {
+    margin: 50px;
+}
+
+table {
+    width: 90%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+th, td {
+    padding: 10px;
+}
+
+label{
+    font-size: 15px;
+    font-weight:bold;
+}
+
+input[type="text"].box,
+input[type="date"].box,
+input[type="email"].box,
+input[type="password"].box,
+textarea.box {
+    flex-direction: column;
+    display:flex;
+    align-items: end;
+    box-sizing: border-box;
+    margin-top: 20px; 
+    padding: 10px;
+    margin: 15px 0px;
+    width: 100%; 
+    margin-right: 800px;
+}
+
+input[type="checkbox"].box {  
+    border: 1px solid black;
+    transform: scale(1.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+}
+
+
+
+
+input[type="submit"].bouton{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #0096ED;
+    color: white;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: auto;                /* c'est les deux lignes la qui centre au milieu */
+    display: block;             /* c'est les deux lignes la qui centre au milieu */
+}
+
+input[type="submit"].bouton :hover {
+    background-color: #22a8f6; 
+}
+
+input[type="submit"].Btnsupp{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #0096ED;
+    color: white;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: auto;                /* c'est les deux lignes la qui centre au milieu */
+    display: block;             /* c'est les deux lignes la qui centre au milieu */
+}
+
+input[type="submit"].Btnsupp :hover {
+    background-color: #22a8f6; 
+}
+   
