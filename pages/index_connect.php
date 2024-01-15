@@ -65,7 +65,7 @@ if (!isset($_SESSION['user_id'])) {
             <!-- Mot du Président -->
             <div class="col-md-4">
                 <h2>Mot du Président</h2>
-                <p>Texte de remerciement du président du CID</p>
+                <p>C'est avec un immense plaisir et une grande fierté que je vous souhaite la bienvenue sur le site web du Cercle des Informaticiens Dispersés (CID).</p>
             </div>
 
             <!-- Liste des membres du bureau -->
@@ -125,6 +125,9 @@ if (!isset($_SESSION['user_id'])) {
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> 
                     <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
                         <p>
+                            <a href="#" class="" style="text-decoration : none;"> Le blog </a>
+                        </p>
+                        <p>
                             <a href="../pages/événements.html" class="" style="text-decoration : none;"> Les événements </a>
                         </p>
                         <p>
@@ -144,6 +147,7 @@ if (!isset($_SESSION['user_id'])) {
                         <p><a href="../pages/Inscription.html" class="" style="text-decoration : none;"> Inscription </a></p>
                         <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
                         <p><a href="../pages/page connexion.html" class="" style="text-decoration : none;"> Se connecter </a></p>
+                        <p><a href="#" class="" style="text-decoration : none;"> Médias Sociaux </a></p>
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
@@ -174,14 +178,19 @@ if (!isset($_SESSION['user_id'])) {
             // Exemple de données factices pour les événements avec des images
             const recentEvents = [
                 {
-                    title: "Événement 1",
-                    description: "Description de l'événement 1",
-                    image: "../SiteSae/assets/imgs/logoCID.png"
+                    title: "Reunion de présenation",
+                    description: "Venez nombreux on vous presente notre site!",
+                    image: "../assets/imgs/bibliothequeIUT.jpg"
                 },
                 {
-                    title: "Événement 2",
-                    description: "Description de l'événement 2",
-                    image: "../assets/imgs/logoIUT.jpg"
+                    title: "On vous solicite",
+                    description: "Nous avons une mission a vous confier",
+                    image: "../assets/imgs/Aller_escalier.webp"
+                },
+                {
+                    title: "Notre site est LA!",
+                    description: "Nous avons le plaisir de vous annoncer la mise en place de notre site",
+                    image: "../assets/imgs/logoCID1.png"
                 },
                 
                 // Ajoutez d'autres événements avec des images ici...
