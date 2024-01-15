@@ -88,4 +88,6 @@ input[type="submit"].bouton :hover {
     background-color: #22a8f6; 
 }
 
-   
+footer{
+    width: 100%;
+}

@@ -48,8 +48,8 @@ table, th, td {
     
 }
 
-th, td {
-    padding: 10px;
+tr, td {
+    padding: 2px;
 }
 
 label{

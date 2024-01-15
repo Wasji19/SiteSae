@@ -192,25 +192,25 @@ $resultRoles = $conn->query($sqlRoles);
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <h2>Ajouter un Utilisateur</h2>
     <label for="nom">Nom :</label>
-    <input type="text" name="nom" required>
+    <input class= "box" type="text" name="nom" required>
 
     <label for="prenom">Prénom :</label>
-    <input type="text" name="prenom" required>
+    <input class= "box" type="text" name="prenom" required>
 
     <label for="email">Email :</label>
-    <input type="email" name="email" required>
+    <input class= "box" type="email" name="email" required>
 
     <label for="motDePasse">Mot de passe :</label>
-    <input type="password" name="motDePasse" required>
+    <input class= "box" type="password" name="motDePasse" required>
 
     <label for="dateNaissance">Date de naissance :</label>
-    <input type="date" name="dateNaissance" required>
+    <input class= "box" type="date" name="dateNaissance" required>
 
     <label for="idPromotion">ID Promotion :</label>
-    <input type="text" name="idPromotion" required>
+    <input class= "box" type="text" name="idPromotion" required>
 
     <label for="estAncienEtudiant">Ancien étudiant :</label>
-    <input type="checkbox" name="estAncienEtudiant">
+    <input class= "box" type="checkbox" name="estAncienEtudiant">
 
   
 
@@ -222,7 +222,7 @@ $resultRoles = $conn->query($sqlRoles);
             }
             ?>
         </select>
-        <input type="submit" name="ajouterUtilisateur" value="Ajouter Utilisateur">
+        <input class= "bouton" type="submit" name="ajouterUtilisateur" value="Ajouter Utilisateur">
 </form>
 
 
@@ -230,28 +230,28 @@ $resultRoles = $conn->query($sqlRoles);
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <h2>Modifier un Utilisateur</h2>
     <label for="idUtilisateur">ID Utilisateur :</label>
-    <input type="text" name="idUtilisateur" required>
+    <input class= "box" type="text" name="idUtilisateur" required>
 
     <label for="nom">Nom :</label>
-    <input type="text" name="nom">
+    <input class= "box" type="text" name="nom">
 
     <label for="prenom">Prénom :</label>
-    <input type="text" name="prenom">
+    <input class= "box" type="text" name="prenom">
 
     <label for="email">Email :</label>
-    <input type="email" name="email">
+    <input class= "box" type="email" name="email">
 
     <label for="motDePasse">Mot de passe :</label>
-    <input type="password" name="motDePasse">
+    <input class= "box"  type="password" name="motDePasse">
 
     <label for="dateNaissance">Date de naissance :</label>
-    <input type="date" name="dateNaissance">
+    <input class= "box" type="date" name="dateNaissance">
 
     <label for="idPromotion">ID Promotion :</label>
-    <input type="text" name="idPromotion">
+    <input class= "box" type="text" name="idPromotion">
 
     <label for="estAncienEtudiant">Ancien étudiant :</label>
-    <input type="checkbox" name="estAncienEtudiant">
+    <input class= "box"type="checkbox" name="estAncienEtudiant">
 
     <label for="role">Rôle :</label>
     <select name="role" required>
@@ -264,12 +264,12 @@ $resultRoles = $conn->query($sqlRoles);
         }
         ?>
     </select>
-    <input type="submit" name="modifierUtilisateur" value="Modifier Utilisateur">
+    <input class= "bouton" type="submit" name="modifierUtilisateur" value="Modifier Utilisateur">
 </form>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
     <h2>Supprimer les Doublons</h2>
-    <input type="submit" name="supprimerDoublons" value="Supprimer Doublons">
+    <input class= "bouton" type="submit" name="supprimerDoublons" value="Supprimer Doublons">
 </form>
 
 
@@ -300,8 +300,8 @@ $resultRoles = $conn->query($sqlRoles);
               <td>{$row['IDRole']}</td>
               <td>
                   <form method='post' action='{$_SERVER['PHP_SELF']}'>
-                      <input type='hidden' name='idUtilisateurSupprimer' value='{$row['IDUtilisateur']}'>
-                      <input type='submit' name='supprimerUtilisateur' value='Supprimer'>
+                      <input  type='hidden' name='idUtilisateurSupprimer' value='{$row['IDUtilisateur']}'>
+                      <input  type='submit' name='supprimerUtilisateur' value='Supprimer'>
                   </form>
               </td>
             </tr>";
