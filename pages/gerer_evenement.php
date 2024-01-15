@@ -112,7 +112,7 @@ $resultNonApprouves = $conn->query($sqlNonApprouves);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/gerer-evenement.css">
+    <link rel="stylesheet" href="../css/gerer-evenement.css>
     <title>Gérer les Événements</title>
 </head>
 <body>
@@ -253,6 +253,48 @@ $resultNonApprouves = $conn->query($sqlNonApprouves);
         ?>
     </table>
 
+    <footer class=" pt-4 pb-0" style="background-color: #d9d9d9;"> 
+        <div class ="container text-center text-md-left"> 
+            <div class = " row text-center text-md-left"> 
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> 
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
+                        <p>
+                            <a href="../pages/événements.html" class="" style="text-decoration : none;"> Les événements </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Calendrier.html" class="" style="text-decoration : none;"> Calendrier </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Annuaire.php" class="" style="text-decoration : none;"> Annuaires </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Galerie.html" class="" style="text-decoration : none;"> Galerie </a>
+                        </p>
+                    
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4  font-weight-bold">A propos</h5>
+                        <p><a href="../pages/Contacter.html" class="" style="text-decoration : none;"> Nous joindre </a></p>
+                        <p><a href="../pages/Inscription.html" class="" style="text-decoration : none;"> Inscription </a></p>
+                        <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
+                        <p><a href="../pages/page connexion.html" class="" style="text-decoration : none;"> Se connecter </a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Contact</h5>
+                        <p>
+                            <i class="fas fa-home mr-3 "></i>Avenue des Facultés, Le Bailly, 80025 Amiens
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3 "></i>Tél. +33(0)3.22.53.40.40
+                        </p>
+                        <p>
+                            <i class="fas fa-printer mr-3 "></i>Fax. +33(0)3.22.89.66.33
+                        </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
 

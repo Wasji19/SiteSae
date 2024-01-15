@@ -152,10 +152,39 @@ $resultRoles = $conn->query($sqlRoles);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/">
+    <link rel="stylesheet" href="../css/gerer_utilisateur.css">
     <title>Gérer les Utilisateurs</title>
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Remplacez le texte par votre logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../assets/imgs/logoCID.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/index_connect.php">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/admin.html">Panel Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Déconnexion</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Recherche">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
 <h1>Gérer les Utilisateurs</h1>
 
@@ -279,6 +308,49 @@ $resultRoles = $conn->query($sqlRoles);
     }
     ?>
 </table>
+
+<footer class=" pt-4 pb-0" style="background-color: #d9d9d9;"> 
+        <div class ="container text-center text-md-left"> 
+            <div class = " row text-center text-md-left"> 
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> 
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
+                        <p>
+                            <a href="../pages/événements.html" class="" style="text-decoration : none;"> Les événements </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Calendrier.html" class="" style="text-decoration : none;"> Calendrier </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Annuaire.php" class="" style="text-decoration : none;"> Annuaires </a>
+                        </p>
+                        <p>
+                            <a href="../pages/Galerie.html" class="" style="text-decoration : none;"> Galerie </a>
+                        </p>
+                    
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4  font-weight-bold">A propos</h5>
+                        <p><a href="../pages/Contacter.html" class="" style="text-decoration : none;"> Nous joindre </a></p>
+                        <p><a href="../pages/Inscription.html" class="" style="text-decoration : none;"> Inscription </a></p>
+                        <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
+                        <p><a href="../pages/page connexion.html" class="" style="text-decoration : none;"> Se connecter </a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Contact</h5>
+                        <p>
+                            <i class="fas fa-home mr-3 "></i>Avenue des Facultés, Le Bailly, 80025 Amiens
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3 "></i>Tél. +33(0)3.22.53.40.40
+                        </p>
+                        <p>
+                            <i class="fas fa-printer mr-3 "></i>Fax. +33(0)3.22.89.66.33
+                        </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

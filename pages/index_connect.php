@@ -125,9 +125,6 @@ if (!isset($_SESSION['user_id'])) {
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"> 
                     <h5 class="text-uppercase mb-4 font-weight-bold ">Notre site</h5>
                         <p>
-                            <a href="#" class="" style="text-decoration : none;"> Le blog </a>
-                        </p>
-                        <p>
                             <a href="../pages/événements.html" class="" style="text-decoration : none;"> Les événements </a>
                         </p>
                         <p>
@@ -147,7 +144,6 @@ if (!isset($_SESSION['user_id'])) {
                         <p><a href="../pages/Inscription.html" class="" style="text-decoration : none;"> Inscription </a></p>
                         <p><a href="#" class="" style="text-decoration : none;"> L'association </a></p> 
                         <p><a href="../pages/page connexion.html" class="" style="text-decoration : none;"> Se connecter </a></p>
-                        <p><a href="#" class="" style="text-decoration : none;"> Médias Sociaux </a></p>
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-4">
