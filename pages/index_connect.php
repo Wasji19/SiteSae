@@ -109,19 +109,15 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
     <div class="container py-5 bg-light mt-4">
-    <section class="connexion-section">
-        <div class="container">
-                <!-- Partie "Connectez-vous" -->
-                <div class="col-md-6">
-                    <h2>Vous etes connecté</h2>
-                    <p>Profitez de vos acces et ...</p>
-                    <a href="page_connexion.html" class="btn btn-primary">Connexion</a>
-                </div>
-            </div>
+    <section class="text-center">
+    <h1>Vous êtes connecté</h1>
+        <div class="container text-center">
+            <!-- Partie "Connectez-vous" -->
+            <p>Profitez d'une navigation complète sur votre site du CID</p>
+            <a href="profil.php" class="btn btn-primary">mon profil</a>
         </div>
     </section>
-    </div>
-
+</div>
 
     <footer class=" pt-4 pb-0" style="background-color: #d9d9d9;"> 
         <div class ="container text-center text-md-left"> 
