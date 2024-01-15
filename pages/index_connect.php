@@ -189,7 +189,7 @@ if (!isset($_SESSION['user_id'])) {
                 },
                 {
                     title: "Notre site est LA!",
-                    description: "Nous avons le plaisir de vous annoncer la mise en place de notre site weeeeeeeeeee",
+                    description: "Nous avons le plaisir de vous annoncer la mise en place de notre site",
                     image: "../assets/imgs/logoCID1.png"
                 },
                 
