@@ -111,117 +111,149 @@ $resultNonApprouves = $conn->query($sqlNonApprouves);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/gerer-evenement.css">
     <title>Gérer les Événements</title>
 </head>
 <body>
 
-<h1>Gérer les Événements</h1>
+<nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Remplacez le texte par votre logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../assets/imgs/logoCID.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/index_connect.php">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/admin.html">Panel Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Déconnexion</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Recherche">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-    <h2>Ajouter un Événement</h2>
-    <label for="titre">Titre :</label>
-    <input type="text" name="titre" required>
 
-    <label for="description">Description :</label>
-    <textarea name="description" required></textarea>
+    <h1>Gérer les Événements</h1>
 
-    <label for="dateEvenement">Date de l'événement :</label>
-    <input type="date" name="dateEvenement" required>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <h2>Ajouter un Événement</h2>
+        <label for="titre">Titre :</label>
+        <input class= "box"  type="text" name="titre" required>
 
-    <label for="lieu">Lieu :</label>
-    <input type="text" name="lieu" required>
+        <label for="description">Description :</label>
+        <textarea class= "box" name="description" required></textarea>
 
-    <input type="submit" name="ajouterEvenement" value="Ajouter Événement">
-</form>
+        <label for="dateEvenement">Date de l'événement :</label>
+        <input class= "box"  type="date" name="dateEvenement" required>
+
+        <label for="lieu">Lieu :</label>
+        <input class= "box" type="text" name="lieu" required>
+
+        <input class= "bouton" type="submit" name="ajouterEvenement" value="Ajouter Événement">
+    </form>
 
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-    <h2>Modifier un Événement</h2>
-    <label for="idEvenement">ID Événement :</label>
-    <input type="text" name="idEvenement" required>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <h2>Modifier un Événement</h2>
+        <label for="idEvenement">ID Événement :</label>
+        <input class= "box"  type="text" name="idEvenement" required>
 
-    <label for="titre">Titre :</label>
-    <input type="text" name="titre">
+        <label for="titre">Titre :</label>
+        <input class= "box"  type="text" name="titre">
 
-    <label for="description">Description :</label>
-    <textarea name="description"></textarea>
+        <label for="description">Description :</label>
+        <textarea class= "box"  name="description"></textarea>
 
-    <label for="dateEvenement">Date de l'événement :</label>
-    <input type="date" name="dateEvenement">
+        <label for="dateEvenement">Date de l'événement :</label>
+        <input class= "box"  type="date" name="dateEvenement">
 
-    <label for="lieu">Lieu :</label>
-    <input type="text" name="lieu">
+        <label for="lieu">Lieu :</label>
+        <input class= "box"  type="text" name="lieu">
 
-    <input type="submit" name="modifierEvenement" value="Modifier Événement">
-</form>
+        <input class= "bouton" type="submit" name="modifierEvenement" value="Modifier Événement">
+    </form>
 
-<h2>Événements Non Approuvés</h2>
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>Titre</th>
-        <th>Description</th>
-        <th>Date de l'événement</th>
-        <th>Lieu</th>
-        <th>Approuvé</th>
-        <th>Action</th>
-    </tr>
-    <?php
-    while ($row = $resultNonApprouves->fetch_assoc()) {
-        echo "<tr>
-                <td>{$row['IDEvenement']}</td>
-                <td>{$row['Titre']}</td>
-                <td>{$row['Description']}</td>
-                <td>{$row['DateEvenement']}</td>
-                <td>{$row['Lieu']}</td>
-                <td>{$row['Approuve']}</td>
-                <td>
-                <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
+    <h2>Événements Non Approuvés</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Date de l'événement</th>
+            <th>Lieu</th>
+            <th>Approuvé</th>
+            <th>Action</th>
+        </tr>
+        <?php
+        while ($row = $resultNonApprouves->fetch_assoc()) {
+            echo "<tr>
+                    <td>{$row['IDEvenement']}</td>
+                    <td>{$row['Titre']}</td>
+                    <td>{$row['Description']}</td>
+                    <td>{$row['DateEvenement']}</td>
+                    <td>{$row['Lieu']}</td>
+                    <td>{$row['Approuve']}</td>
+                    <td>
+                    <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
+                        <input type='hidden' name='idEvenementApprouver' value='{$row['IDEvenement']}'>
+                        <input type='submit' name='approuverEvenement' value='Approuver'>
+                    </form>
+                </td>
+                </tr>";
+        }
+        ?>
+    </table>
+
+    <h2>Liste des Événements</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Date de l'événement</th>
+            <th>Lieu</th>
+            <th>Approuvé</th>
+            <th>Action</th>
+        </tr>
+        <?php
+        while ($row = $resultEvents->fetch_assoc()) {
+            echo "<tr>
+                    <td>{$row['IDEvenement']}</td>
+                    <td>{$row['Titre']}</td>
+                    <td>{$row['Description']}</td>
+                    <td>{$row['DateEvenement']}</td>
+                    <td>{$row['Lieu']}</td>
+                    <td>{$row['Approuve']}</td>
+                    <td>
+                    <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
                     <input type='hidden' name='idEvenementApprouver' value='{$row['IDEvenement']}'>
                     <input type='submit' name='approuverEvenement' value='Approuver'>
                 </form>
-              </td>
-              </tr>";
-    }
-    ?>
-</table>
-
-<h2>Liste des Événements</h2>
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>Titre</th>
-        <th>Description</th>
-        <th>Date de l'événement</th>
-        <th>Lieu</th>
-        <th>Approuvé</th>
-        <th>Action</th>
-    </tr>
-    <?php
-    while ($row = $resultEvents->fetch_assoc()) {
-        echo "<tr>
-                <td>{$row['IDEvenement']}</td>
-                <td>{$row['Titre']}</td>
-                <td>{$row['Description']}</td>
-                <td>{$row['DateEvenement']}</td>
-                <td>{$row['Lieu']}</td>
-                <td>{$row['Approuve']}</td>
-                <td>
                 <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
-                <input type='hidden' name='idEvenementApprouver' value='{$row['IDEvenement']}'>
-                <input type='submit' name='approuverEvenement' value='Approuver'>
-            </form>
-            <form method='post' action='" . $_SERVER['PHP_SELF'] . "'>
-                <input type='hidden' name='idEvenementSupprimer' value='{$row['IDEvenement']}'>
-                <input type='submit' name='supprimerEvenement' value='Supprimer'>
-            </form>
-              </td>
-              </tr>";
-    }
-    ?>
-</table>
+                    <input type='hidden' name='idEvenementSupprimer' value='{$row['IDEvenement']}'>
+                    <input type='submit' name='supprimerEvenement' value='Supprimer'>
+                </form>
+                </td>
+                </tr>";
+        }
+        ?>
+    </table>
 
-</body>
+    </body>
 </html>
 
 <?php
