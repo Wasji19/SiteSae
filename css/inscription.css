@@ -5,6 +5,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-color: #e4e4e4;
+}
 
 section {
     position: relative;
@@ -62,7 +65,7 @@ section h2 {
     border: 1px solid black;
     letter-spacing: 1px;
     outline: none;
-    background-color: transparent;
+    background-color: white;
     border-radius: 1px;
     color:black;
 }
@@ -129,10 +132,7 @@ section h2 {
     
 }
 
-body{
-    background-color: white;
 
-}
 
 .navbar{
     background-color: red;
