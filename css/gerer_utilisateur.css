@@ -48,8 +48,8 @@ table, th, td {
     
 }
 
-tr, td {
-    padding: 2px;
+th, td {
+    padding: 5px;
 }
 
 label{
@@ -64,13 +64,17 @@ input[type="password"].box,
 textarea.box {
     flex-direction: column;
     display:flex;
-    align-items: end;
+    align-items: center;
     box-sizing: border-box;
     margin-top: 20px; 
     padding: 10px;
     margin: 15px 0px;
     width: 100%; 
     margin-right: 800px;
+}
+
+input[type="date"].box{
+    font-size:x-large;
 }
 
 input[type="checkbox"].box {  
